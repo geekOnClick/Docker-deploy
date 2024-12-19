@@ -6,7 +6,7 @@ module.exports = {
       instances: 1,
       exec_mode: 'fork',
       env_production: {
-        NODE_ENV: 'production',
+        NODE_ENV: process.env.NODE_ENV,
         POSTGRES_HOST: process.env.POSTGRES_HOST,
         POSTGRES_PORT: process.env.POSTGRES_PORT,
         POSTGRES_USER: process.env.POSTGRES_USER,
